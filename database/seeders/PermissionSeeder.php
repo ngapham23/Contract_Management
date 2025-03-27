@@ -19,8 +19,11 @@ class PermissionSeeder extends Seeder
             ['name' => 'view-service',   'description' => 'Xem dịch vụ'],
                  ];
              // Thêm các quyền khác tùy theo chức năng hệ thống: hợp đồng, thanh toán, …\n
-        foreach ($permissions as $permission) {
-            DB::table('permissions')->insert($permission);
-        }
+             foreach ($permissions as $permission) {
+                DB::table('permissions')->updateOrInsert(
+                    ['name' => $permission['name']],
+                    ['description' => $permission['description']]
+                );
+            }
     }
 }
