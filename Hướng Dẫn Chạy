@@ -1,4 +1,6 @@
 # 📌 Hướng Dẫn Cài Đặt Dự Án Laravel
+trước tiên phải có xampp
+-cài đặt ở đây:https://www.apachefriends.org/download.html
 Bật terminal lên hoặc git bash
 ## 🚀 1. Clone Dự Án
 Trước tiên, bạn cần clone dự án từ GitHub về máy:
@@ -9,9 +11,10 @@ git clone https://github.com/ngapham23/Contract_Management vào visual code stud
 ---
 ## 📦 2. Cài Đặt Dependencies
 Cài đặt các thư viện cần thiết bằng Composer:
-composer install
-npm install
-
+-composer install
+-npm install
+-cp .env.example .env
+-php artisan key:generate
 ```
 
 ---
