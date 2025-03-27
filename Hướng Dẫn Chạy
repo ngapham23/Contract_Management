@@ -1,6 +1,8 @@
 # 📌 Hướng Dẫn Cài Đặt Dự Án Laravel
-trước tiên phải có xampp
+trước tiên phải có xampp và composer
 -cài đặt ở đây:https://www.apachefriends.org/download.html
+-cài đặt ở đây:https://getcomposer.org/
+sau khi cài xampp xong bật Xampp lên : bật Apache và MySQL
 Bật terminal lên hoặc git bash
 ## 🚀 1. Clone Dự Án
 Trước tiên, bạn cần clone dự án từ GitHub về máy:
@@ -21,13 +23,13 @@ Cài đặt các thư viện cần thiết bằng Composer:
 ## 📦 3.
 Import database
 
--Vào phpMyAdmin, tạo database tên là cont_management.
+-Vào phpMyAdmin(http://localhost/phpmyadmin), tạo database tên là cont_management.
 -Import file SQL vào database đó,vào mục sql của bảng DB chạy lệnh ALTER TABLE users ADD COLUMN email_verified_at TIMESTAMP NULL;
 -Vào visual mở dự án tìm đến file env. coi có
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=Con_management
+DB_DATABASE=Cont_management
 DB_USERNAME=root
 DB_PASSWORD=
 -tiếp theo chạy lệnh trong terminal
