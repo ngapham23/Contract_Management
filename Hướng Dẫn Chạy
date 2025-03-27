@@ -24,7 +24,7 @@ Cài đặt các thư viện cần thiết bằng Composer:
 Import database
 
 -Vào phpMyAdmin(http://localhost/phpmyadmin), tạo database tên là cont_management.
--Vào mục import(Nhập),Import file SQL vào database đó(file sql được để trong thư mục resources/views/DB/Cont_management_sql
+-Vào mục import(Nhập),Import file SQL vào database đó (file sql được để trong thư mục resources/views/DB/Cont_management_sql)
 -vào mục sql của bảng DB chạy lệnh ALTER TABLE users ADD COLUMN email_verified_at TIMESTAMP NULL;
 -Vào visual mở dự án tìm đến file env. coi có
 DB_CONNECTION=mysql
